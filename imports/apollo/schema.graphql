@@ -1,0 +1,25 @@
+type Link {
+    _id: ID!
+    title: String
+    url: String
+}
+
+type product {
+    _id: ID
+    name: String
+    price: Float
+    descritpion: String
+}
+
+type seller {
+    _id: ID!
+    userName: String
+    name: String
+    pass: String
+    products: [product]
+}
+
+type Query {
+    getLink (id: ID!): Link
+    getLinks: [Link]
+}
