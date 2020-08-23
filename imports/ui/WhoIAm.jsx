@@ -6,17 +6,21 @@ export const WhoIAm = () => {
     <div >
       <header >
         <h1>O que você deseja fazer:</h1>
-        <button>
-          Vender
+        <Link to="/SellerInit">
+          <button>
+            Vender
         </button>
-        <button>
-          Comprar
+        </Link>
+        <Link to="/">
+          <button>
+            Comprar
         </button>
+        </Link>
       </header>
 
       <p >
-      <Link to="/">Voltar a página inicial!!!</Link>
-    </p>
+        <Link to="/">Voltar a página inicial!!!</Link>
+      </p>
 
     </div>
   );

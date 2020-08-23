@@ -4,19 +4,23 @@ type Link {
     url: String
 }
 
-type product {
+type Product {
     _id: ID
     name: String
     price: Float
     descritpion: String
 }
 
-type seller {
+type Seller {
     _id: ID!
     userName: String
     name: String
     pass: String
-    products: [product]
+}
+
+type QuerySeller {
+    getSeller (id:ID!) : Seller
+    getSellers: [Seller]
 }
 
 type Query {

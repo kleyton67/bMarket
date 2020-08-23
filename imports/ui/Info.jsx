@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { gql } from 'apollo-boost';
+import { Link } from 'react-router-dom';
 
 const GET_LINKS = gql`
     {
